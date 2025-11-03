@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #0a0a0a;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #111111;
+    padding: 60px 40px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #1d4ed8;
+}
+
+section {
+    background: #111111;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.skills-grid, .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill-item, .tech-item {
+    background: #1a2544;
+    color: #2563eb;
+    padding: 6px 13px;
+    border: 1px solid #2563eb;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.85em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #111111;
+    border-radius: 8px;
+    padding: 28px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid #333333;
+}
+
+.project-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.project-card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.project-card p {
+    color: #cccccc;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+/* Project image styles */
+.project-image-wrapper {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #1a2544;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    color: #2563eb;
+    font-weight: 500;
+    border: 1px solid #2563eb;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #111111;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 8px;
+    position: relative;
+    animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #666666;
+    transition: color 0.2s;
+    font-weight: 300;
+}
+
+.close-btn:hover {
+    color: #1a1a1a;
+}
+
+.modal-content h3 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.modal-content .project-tags {
+    margin: 20px 0;
+}
+
+.modal-content .description {
+    line-height: 1.8;
+    margin: 25px 0;
+    color: #cccccc;
+}
+
+.modal-content .features {
+    margin: 25px 0;
+}
+
+.modal-content .features h4 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.modal-content .features ul {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.modal-content .features li {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.project-link {
+    padding: 12px 28px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    background: #1d4ed8;
+}
+
+.education-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333333;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.education-item h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.education-item p {
+    color: #cccccc;
+    margin: 4px 0;
+}
+
+.education-item strong {
+    color: #ffffff;
+}
+
+.courses-title {
+    color: #ffffff;
+    margin: 20px 0 12px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* Experience section styling - consistent with Education */
+.experience-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333333;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-item h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.experience-item .exp-meta {
+    color: #cccccc;
+    margin: 4px 0 8px 0;
+}
+
+.experience-item .exp-summary {
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.experience-item .exp-details {
+    margin-left: 20px;
+    color: #cccccc;
+}
+
+/* Abstract block: slightly muted gray to match experience list text */
+.exp-abstract {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-top: 6px;
+}
+
+.blue {
+    color: #447aee;
+    font-weight: bold;
+}
+
+#about {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 1.05em;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        margin: 20px;
+        padding: 35px 25px;
+    }
+}

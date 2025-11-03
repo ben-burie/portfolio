@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Burie - Software Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="name"></h1>
+            <p class="tagline" id="tagline"></p>
+            <p class="location" id="location"></p>
+            <div class="contact-info" id="contact-info"></div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p id="about"></p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-grid" id="projects"></div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div id="education"></div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div id="experience"></div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid" id="skills"></div>
+        </section>
+
+        <section>
+            <h2>Technologies</h2>
+            <div class="tech-grid" id="technologies"></div>
+        </section>
+    </div>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content" id="modalContent">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
