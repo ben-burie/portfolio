@@ -48,7 +48,8 @@ const portfolioData = {
                 "Devised accurate <span class=blue>SQL</span> queries to gather applicable information from the database during development.",
                 "Communicated with internal users to ensure all necessary features were included.",
                 "Performed thorough <span class=blue>unit testing</span> and <span class=blue>code review</span> to verify the solution was working as intended, and followed all company development standards."
-            ]
+            ],
+            technologies: ["SAP", "SAP BTP", "ABAP", "SQL", "SOAP API", "SFTP", "Cloud Integration", "Groovy", "Unit Testing"]
         },
         {
             company: "University of Wisconsin-Whitewater",
@@ -66,27 +67,37 @@ const portfolioData = {
             ],
             projectHeader2: "Abstract:",
             details2: [
-                "We aim to expand upon a voice command prototype that allows users to speak commands to get their computer to perform certain actions (e.g. “Create new Word Document”). It is built upon the Conformer deep-learning architecture. The goal of this research is to expand upon and optimize the voice command recognition software in terms of latency and accuracy. The current implementation results in a moderate (60-70%) recognition accuracy benchmark. This research aims to improve this metric by augmenting the training audio data made using a generative AI model called BarkAI, experimenting with varying sizes of training data, modifying Conformer model hyper-parameters, and ensuring input audio is clean and high quality. Ultimately, we can visualize a future where improvements to this voice command recognition system could assist users with disabilities that impact their ability to use traditional keyboard and mouse interfaces."
-            ]
+                "We aim to expand upon a voice command prototype that allows users to speak commands to get their computer to perform certain actions (e.g. 'Create new Word Document'). It is built upon the Conformer deep-learning architecture. The goal of this research is to expand upon and optimize the voice command recognition software in terms of latency and accuracy. The current implementation results in a moderate (60-70%) recognition accuracy benchmark. This research aims to improve this metric by augmenting the training audio data made using a generative AI model called BarkAI, experimenting with varying sizes of training data, modifying Conformer model hyper-parameters, and ensuring input audio is clean and high quality. Ultimately, we can visualize a future where improvements to this voice command recognition system could assist users with disabilities that impact their ability to use traditional keyboard and mouse interfaces."
+            ],
+            technologies: ["Artificial Intelligence", "Python", "Conformer", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
         }
     ],
     skills: [
         "Problem Solving",
-        "Algorithm Design",
-        "System Design",
+        "User Communication",
+        "Machine Learning",
         "Database Design",
         "API Development",
-        "Agile Development"
+        "Cloud Integration",
+        "Agile Development",
+        "Artificial Intelligence",
+        "Software Testing"
     ],
     technologies: [
         "JavaScript",
         "Python",
-        "React",
-        "Node.js",
+        "Java",
         "SQL",
-        "MongoDB",
-        "Git",
-        "Docker"
+        "React",
+        "MySQL",
+        "GitHub",
+        "SAP",
+        "SAP BTP",
+        "Google Colab",
+        "ABAP",
+        "Groovy",
+        "SOAP API",
+        "SFTP"
     ],
     projects: [
         {
@@ -222,6 +233,12 @@ function renderPortfolio() {
                         ? `<div class="exp-abstract">${exp.details2.join(' ')}</div>`
                         : `<ul class="exp-details">${exp.details2.map(d => `<li>${d}</li>`).join('')}</ul>`
                 ) : ''}
+                ${exp.technologies ? `
+                    <h4 class="courses-title" style="margin-top: 20px;">Skills</h4>
+                    <div class="project-tags" style="margin-top: 12px;">
+                        ${exp.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
+                    </div>
+                ` : ''}
             </div>
         `).join('');
     }
