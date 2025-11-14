@@ -310,4 +310,49 @@ window.onclick = function(event) {
     }
 }
 
+// Smooth background fade towards blue as the user scrolls
+;(function initScrollBackground() {
+    const startHex = '#f4f6f8'; // initial --bg
+    const endHex = '#e6f8ff';   // target soft blue at bottom
+
+    function hexToRgb(hex) {
+        const h = hex.replace('#','');
+        return [parseInt(h.substring(0,2),16), parseInt(h.substring(2,4),16), parseInt(h.substring(4,6),16)];
+    }
+
+    function rgbToHex(r,g,b) {
+        return '#' + [r,g,b].map(x => x.toString(16).padStart(2,'0')).join('');
+    }
+
+    function lerp(a, b, t) { return Math.round(a + (b - a) * t); }
+
+    const startRgb = hexToRgb(startHex);
+    const endRgb = hexToRgb(endHex);
+
+    let ticking = false;
+
+    function updateBg() {
+        const scroll = window.scrollY || window.pageYOffset;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const t = docHeight > 0 ? Math.min(1, scroll / docHeight) : 0;
+        const r = lerp(startRgb[0], endRgb[0], t);
+        const g = lerp(startRgb[1], endRgb[1], t);
+        const b = lerp(startRgb[2], endRgb[2], t);
+        const hex = rgbToHex(r,g,b);
+        document.documentElement.style.setProperty('--bg', hex);
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(updateBg);
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // initialize on load
+    updateBg();
+})();
+
 renderPortfolio();
