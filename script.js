@@ -6,7 +6,9 @@ const portfolioData = {
         linkedin: "https://www.linkedin.com/in/ben-burie-2a33a6292/",
         github: "https://github.com/ben-burie"
     },
-    about: "I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a BS in Computer Science with a minor in Data Science. Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. I have experience in back-end software development, cloud platform integrations, machine learning, and data analysis.",
+    about: `I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a BS in Computer Science with a minor in Data Science. 
+            Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. 
+            I have experience in back-end software development, cloud platform integrations, machine learning, and data analysis.`,
     education: [
         {
             school: "University of Wisconsin-Whitewater",
@@ -35,20 +37,7 @@ const portfolioData = {
             end: "Present",
             location: "Milwaukee, WI",
             summary: "Utilizing the SAP ERP system to develop software solutions that support the needs of the human resources and plant maintenance departments at WEC Energy Group.",
-            projectHeader: "Project: Built an application and integration flow that transmits employee premium medical benefit data to a cloud vendor.",       
-            details: [
-                "Engineered an application in <span class=blue>SAP</span> using <span class=blue>ABAP</span> programming that allows for automatic extraction and preparation of employee PMA data with a selection screen for filtering capabilities.",
-                "Constructed an integration flow in <span class=blue>SAP Business Technology Platform</span> used to transmit the data files from the on-premise database to the cloud vendor using <span class=blue>SOAP API</span> and <span class=blue>SFTP.</span>",
-                "Developed <span class=blue>Groovy</span> scripts to modify parts of the output file to ensure it included all details required by the vendor.",
-                "Conducted quality testing to ensure the proper data was being gathered and received by the vendor as expected."
-            ],
-            projectHeader2: "Project: Modified an existing application to allow for automatic location premium additions to employee step-up jobs.",
-            details2: [
-                "Utilized <span class=blue>ABAP</span> object-oriented programming to develop functionality to convert the previously manual process of adding location premiums to employees step up wages to an automatic process.",
-                "Devised accurate <span class=blue>SQL</span> queries to gather applicable information from the database during development.",
-                "Communicated with internal users to ensure all necessary features were included.",
-                "Performed thorough <span class=blue>unit testing</span> and <span class=blue>code review</span> to verify the solution was working as intended, and followed all company development standards."
-            ],
+            projectHeader: "",
             technologies: ["SAP", "SAP BTP", "ABAP", "SQL", "SOAP API", "SFTP", "Cloud Integration", "Groovy", "Unit Testing"]
         },
         {
@@ -57,19 +46,30 @@ const portfolioData = {
             start: "May 2025",
             end: "Present",
             location: "Whitewater, WI",
-            summary: "Working under the guideance of Dr. Hairi, Assiatant Professor of Computer Science, to optimize a voice command system using a deep learning neural network.",
-            projectHeader: "Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System",
+            summary: "Working under the guidance of Dr. Hairi, Assiatant Professor of Computer Science, to optimize a voice command system using a deep learning neural network.",
+            projectHeader: "<a href='https://github.com/ben-burie/voice-command-system-optimization' target='_blank'>Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System</a>",
             details: [
-                "Investigating and learning the <span class=blue>Conformer</span> deep-learning architecture and its implementation for voice command recognition.",
-                "Designing <span class=blue>Python</span> batch testing scripts to evaluate model accuracy at scale and analyzing performance bottlenecks to improve system runtime efficiency.",
-                "Executing training audio signal generation in <span class=blue>Google Colab</span> and analyzing runtime performance.",
-                "Implemented improvements to improve command recognition accuracy by <span class=blue>13%</span> thus far."
-            ],
-            projectHeader2: "Abstract:",
-            details2: [
-                "We aim to expand upon a voice command prototype that allows users to speak commands to get their computer to perform certain actions (e.g. 'Create new Word Document'). It is built upon the Conformer deep-learning architecture. The goal of this research is to expand upon and optimize the voice command recognition software in terms of latency and accuracy. The current implementation results in a moderate (60-70%) recognition accuracy benchmark. This research aims to improve this metric by augmenting the training audio data made using a generative AI model called BarkAI, experimenting with varying sizes of training data, modifying Conformer model hyper-parameters, and ensuring input audio is clean and high quality. Ultimately, we can visualize a future where improvements to this voice command recognition system could assist users with disabilities that impact their ability to use traditional keyboard and mouse interfaces."
+                "Investigating and learning Conformer deep-learning architecture and its implementation for voice command recognition.",
+                "Designing Python batch testing scripts to evaluate model accuracy at scale and analyzing performance bottlenecks to improve system runtime efficiency.",
+                "Executing training audio signal generation in Google Colab and analyzing runtime performance.",
+                "Implemented solutions to improve command recognition accuracy by 13% thus far."
             ],
             technologies: ["Artificial Intelligence", "Python", "Conformer", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
+        },
+        {
+            company: "University of Wisconsin-Whitewater",
+            role: "Teaching Assistant & Computer Science Tutor",
+            start: "January 2025",
+            end: "May 2025",
+            location: "Whitewater, WI",
+            summary: "Employed by UW-Whitewater's computer science department as a teaching assistant and tutor for intro-level programming courses.",
+            projectHeader: "",
+            details: [
+                "Teaching assistant for COMPSCI 170: Introduction to Python Programming.",
+                "Tested, reviewed, and debugged over 50 student Python programs per week.",
+                "Assisted students during drop in tutoring hours for the following courses: COMPSCI 170: Introduction to Python Programming, COMPSCI 172: Introduction to Java Programming, and COMPSCI 220: Intermediate Java Programming."
+            ],
+            technologies: ["Teaching", "Code Review"]
         }
     ],
     skills: [
@@ -119,7 +119,7 @@ const portfolioData = {
             title: "TrackRabbit",
             shortDescription: "Another amazing project you've built",
             fullDescription: "Detailed explanation of this project, the technologies used, and the impact it had.",
-            technologies: ["C++", "React", "Arduino"],
+            technologies: ["C++", "Arduino"],
             features: [
                 "Key feature that stands out",
                 "Technical challenge you overcame",
@@ -133,7 +133,7 @@ const portfolioData = {
             title: "Stryde - <i>In Progress</i>",
             shortDescription: "Yet another cool project",
             fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
-            technologies: ["React", "Supabase", "SQL"],
+            technologies: ["Python", "ML", "OpenAI"],
             features: [
                 "Innovative approach you took",
                 "How it helps users",
@@ -184,10 +184,35 @@ const portfolioData = {
             github: "https://github.com/benburie/project3",
             demo: null
         }
+    ],
+    honors: [
+        {
+            title: "2025-26 UW-Whitewater Undergraduate Research Seed Grant",
+            date: "November 2025",
+            issuedBy: "UW-Whitewater Undergraduate Research Program"
+        },
+        {
+            title: "UW-Whitewater Spring 2024 Programming Competition Champion",
+            date: "April 2024",
+            issuedBy: "UW-Whitewater Computer Science Department"
+        },
+        {
+            title: "UW-Whitewater Deans List",
+            date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025",
+            issuedBy: "UW-Whitewater"
+        },
+        {
+            title: "Fall 2024 Outstanding Python Project Award",
+            date: "December 2024",
+            issuedBy: "Dr. Hairi, Assistant Professor of Computer Science"
+        },
+        {
+            title: "2026 Boston Marathon Qualifier",
+            date: "September 2025",
+            issuedBy: "Boston Athletic Association"
+        }
     ]
 };
-
-const DEFAULT_PROJECT_IMAGE = 'images/RIASEC Results.png';
 
 function renderPortfolio() {
     document.getElementById('name').textContent = portfolioData.name;
@@ -223,16 +248,9 @@ function renderPortfolio() {
             <div class="experience-item">
                 <h3>${exp.role} <span class="at">@</span> <strong>${exp.company}</strong></h3>
                 <p class="exp-meta"><strong>${exp.start}${exp.end ? ` — ${exp.end}` : ''}</strong> | ${exp.location}</p>
-                <p class="exp-summary">${exp.summary}</p> &nbsp;
+                <p class="exp-summary">${exp.summary}</p>
                 <p class="exp-projectHeader">${exp.projectHeader}</p>
                 ${exp.details && exp.details.length ? `<ul class="exp-details">${exp.details.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
-                <br>
-                <p class="exp-projectHeader2">${exp.projectHeader2}</p>
-                ${exp.details2 && exp.details2.length ? (
-                    (/abstract/i).test(exp.projectHeader2 || '')
-                        ? `<div class="exp-abstract">${exp.details2.join(' ')}</div>`
-                        : `<ul class="exp-details">${exp.details2.map(d => `<li>${d}</li>`).join('')}</ul>`
-                ) : ''}
                 ${exp.technologies ? `
                     <h4 class="courses-title" style="margin-top: 20px;">Skills</h4>
                     <div class="project-tags" style="margin-top: 12px;">
@@ -257,13 +275,21 @@ function renderPortfolio() {
     projectsDiv.innerHTML = portfolioData.projects.map((project, index) => `
         <div class="project-card" onclick="openModal(${index})">
             <div class="project-image-wrapper">
-                <img src="${project.image || DEFAULT_PROJECT_IMAGE}" alt="${project.title} screenshot" class="project-image">
+                <img src="${project.image}" alt="${project.title} screenshot" class="project-image">
             </div>
             <h3>${project.title}</h3>
             <p>${project.shortDescription}</p>
             <div class="project-tags">
                 ${project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
             </div>
+        </div>
+    `).join('');
+
+    const honorsDiv = document.getElementById('honors');
+    honorsDiv.innerHTML = portfolioData.honors.map((honor, index) => `
+        <div class="honors-item">
+            <h3>${honor.title}</h3>
+            <p class="honors-meta"><strong>${honor.date}</strong> | ${honor.issuedBy}</p>
         </div>
     `).join('');
 }
@@ -276,7 +302,7 @@ function openModal(projectIndex) {
     modalContent.innerHTML = `
         <span class="close-btn" onclick="closeModal()">&times;</span>
         ${project.image ? `\
-        <img src="${project.image || DEFAULT_PROJECT_IMAGE}" alt="${project.title} screenshot" class="modal-image">` : ''}
+        <img src="${project.image}" alt="${project.title} screenshot" class="modal-image">` : ''}
         <h3>${project.title}</h3>
         <div class="project-tags">
             ${project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
