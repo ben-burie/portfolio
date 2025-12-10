@@ -6,9 +6,10 @@ const portfolioData = {
         linkedin: "https://www.linkedin.com/in/ben-burie-2a33a6292/",
         github: "https://github.com/ben-burie"
     },
-    about: `I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a BS in Computer Science with a minor in Data Science. 
-            Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. 
-            I have experience in back-end software development, cloud platform integrations, machine learning, and data analysis.`,
+    about: `I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a B.S. in Computer Science with a minor in Data Science. 
+            Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. I also participate in undergraduate research, 
+            working on a project to optimize the accuracy of a deep-learning voice command recognition software system.
+            I have experience in back-end software development, cloud platform integrations, artificial intelligence, machine learning, and data analysis.`,
     education: [
         {
             school: "University of Wisconsin-Whitewater",
@@ -21,11 +22,13 @@ const portfolioData = {
                 "Data Structures",
                 "Theory of Algorithms",
                 "Database Design",
+                "SQL Programming",
                 "Embedded Systems",
                 "JavaScript & DHTML",
                 "Machine Learning",
                 "Data Science",
-                "Software Engineering"
+                "Software Engineering",
+                "Applied Statistics"
             ]
         }
     ],
@@ -52,7 +55,8 @@ const portfolioData = {
                 "Investigating and learning Conformer deep-learning architecture and its implementation for voice command recognition.",
                 "Designing Python batch testing scripts to evaluate model accuracy at scale and analyzing performance bottlenecks to improve system runtime efficiency.",
                 "Executing training audio signal generation in Google Colab and analyzing runtime performance.",
-                "Implemented solutions to improve command recognition accuracy by 13% thus far."
+                "Implemented solutions to improve command recognition accuracy by 13% thus far.",
+                "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter"
             ],
             technologies: ["Artificial Intelligence", "Python", "Conformer", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
         },
@@ -64,12 +68,8 @@ const portfolioData = {
             location: "Whitewater, WI",
             summary: "Employed by UW-Whitewater's computer science department as a teaching assistant and tutor for intro-level programming courses.",
             projectHeader: "",
-            details: [
-                "Teaching assistant for COMPSCI 170: Introduction to Python Programming.",
-                "Tested, reviewed, and debugged over 50 student Python programs per week.",
-                "Assisted students during drop in tutoring hours for the following courses: COMPSCI 170: Introduction to Python Programming, COMPSCI 172: Introduction to Java Programming, and COMPSCI 220: Intermediate Java Programming."
-            ],
-            technologies: ["Teaching", "Code Review"]
+            details: [],
+            technologies: ["Teaching", "Code Review", "Python", "Java"]
         }
     ],
     skills: [
@@ -103,7 +103,7 @@ const portfolioData = {
         {
             image: "images/evchargemap.png",
             title: "EV ChargeMap",
-            shortDescription: "A brief one-line description",
+            shortDescription: "Full-stack web application that assists electric vehicle drivers planning long road trips.",
             fullDescription: "This is a more detailed description of your project. Explain what problem it solves, why you built it, and what makes it interesting.",
             technologies: ["Python", "Flask", "MySQL"],
             features: [
@@ -111,13 +111,13 @@ const portfolioData = {
                 "Feature 2: Another cool feature",
                 "Feature 3: What makes this special"
             ],
-            github: "https://github.com/benburie/project1",
+            github: "https://github.com/ben-burie/EVChargeMap",
             demo: "https://project1-demo.com"
         },
         {
             image: "images/trackrabbit.png",
             title: "TrackRabbit",
-            shortDescription: "Another amazing project you've built",
+            shortDescription: "Physical device that allows runners to get real-time audio feedback on their pace when using an indoor track.",
             fullDescription: "Detailed explanation of this project, the technologies used, and the impact it had.",
             technologies: ["C++", "Arduino"],
             features: [
@@ -125,13 +125,13 @@ const portfolioData = {
                 "Technical challenge you overcame",
                 "Results or metrics if applicable"
             ],
-            github: "https://github.com/benburie/project2",
+            github: "https://github.com/ben-burie/TrackRabbit",
             demo: "https://project2-demo.com"
         },
         {
             image: "images/stryde.svg",
             title: "Stryde - <i>In Progress</i>",
-            shortDescription: "Yet another cool project",
+            shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
             fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
             technologies: ["Python", "ML", "OpenAI"],
             features: [
@@ -145,7 +145,7 @@ const portfolioData = {
         {
             image: "images/mealmentor.svg",
             title: "Meal Mentor",
-            shortDescription: "Yet another cool project",
+            shortDescription: "Web applcation that allows users to plan their weekly meals and grocery trips.",
             fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
             technologies: ["JavaScript", "HTML/CSS"],
             features: [
@@ -153,13 +153,13 @@ const portfolioData = {
                 "How it helps users",
                 "Future improvements planned"
             ],
-            github: "https://github.com/benburie/project3",
+            github: "https://github.com/ben-burie/MealMentor",
             demo: null
         },
         {
             image: "images/bankportal.svg",
             title: "Bank Portal Simulation",
-            shortDescription: "Yet another cool project",
+            shortDescription: "A simulated version of a banking application allowing users to mimic various baking transactions.",
             fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
             technologies: ["Java"],
             features: [
@@ -167,13 +167,13 @@ const portfolioData = {
                 "How it helps users",
                 "Future improvements planned"
             ],
-            github: "https://github.com/benburie/project3",
+            github: "https://github.com/ben-burie/BankPortalSimulation",
             demo: null
         },
         {
             image: "images/wordle.png",
             title: "Wordle Clone",
-            shortDescription: "Yet another cool project",
+            shortDescription: "Re-creation of the popular game Wordle.",
             fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
             technologies: ["Python"],
             features: [
@@ -181,7 +181,7 @@ const portfolioData = {
                 "How it helps users",
                 "Future improvements planned"
             ],
-            github: "https://github.com/benburie/project3",
+            github: "https://github.com/Bruhmux/Wordle-CLI",
             demo: null
         }
     ],
@@ -197,7 +197,7 @@ const portfolioData = {
             issuedBy: "UW-Whitewater Computer Science Department"
         },
         {
-            title: "UW-Whitewater Deans List",
+            title: "UW-Whitewater Deans List (4x)",
             date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025",
             issuedBy: "UW-Whitewater"
         },
