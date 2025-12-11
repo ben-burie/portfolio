@@ -104,12 +104,12 @@ const portfolioData = {
             image: "images/evchargemap.png",
             title: "EV ChargeMap",
             shortDescription: "Full-stack web application that assists electric vehicle drivers planning long road trips.",
-            fullDescription: "This is a more detailed description of your project. Explain what problem it solves, why you built it, and what makes it interesting.",
+            fullDescription: "Developed a full-stack system using Flask, MySQL, and modular Python APIs, with clean routing and frontend integration through JavaScript. Designed a normalized relational database and optimized queries (including geospatial lookups and indexing) to handle large EV and station datasets efficiently.",
             technologies: ["Python", "Flask", "MySQL"],
             features: [
-                "Feature 1: Description of the feature",
-                "Feature 2: Another cool feature",
-                "Feature 3: What makes this special"
+                "Plan EV road trips effortlessly by entering a start and end location and instantly seeing charging stations along your route, complete with suggested stops based on your vehicle’s range.",
+                "Personalize your experience with user accounts that let you add your own EVs, save trips, and revisit all your routes and charging stops anytime.",
+                "Includes a smooth, map-based interface powered by real EV + charging-station data, delivering fast route calculations and clear visual station displays."
             ],
             github: "https://github.com/ben-burie/EVChargeMap",
             demo: "https://project1-demo.com"
@@ -118,12 +118,12 @@ const portfolioData = {
             image: "images/trackrabbit.png",
             title: "TrackRabbit",
             shortDescription: "Physical device that allows runners to get real-time audio feedback on their pace when using an indoor track.",
-            fullDescription: "Detailed explanation of this project, the technologies used, and the impact it had.",
+            fullDescription: "The device uses a sensor input and an internal microcontroller to detect runner passage, calculate split times, and generate pace-based audio feedback. Its circuit board handles all timing logic, audio processing, and LCD output, with the internal wiring connecting the sensor, display, speaker, and power components.",
             technologies: ["C++", "Arduino"],
             features: [
-                "Key feature that stands out",
-                "Technical challenge you overcame",
-                "Results or metrics if applicable"
+                "The device detects when a runner passes the sensor and automatically records each split time.",
+                "It gives audio feedback by announcing how many seconds ahead or behind the goal pace you are, helping you adjust effort in real time.",
+                "A live timer and lap counter appears on the LCD screen, with the internal electronics handling the timing logic, sensor input, audio output, and display."
             ],
             github: "https://github.com/ben-burie/TrackRabbit",
             demo: "https://project2-demo.com"
@@ -132,12 +132,11 @@ const portfolioData = {
             image: "images/stryde.svg",
             title: "Stryde - <i>In Progress</i>",
             shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
-            fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
+            fullDescription: "Runners can communicate with an AI-powered coach that uses the OpenAI API. Additionally, users can view their vdot score as its predicted by a custom-developed machine learning model.",
             technologies: ["Python", "ML", "OpenAI"],
             features: [
-                "Innovative approach you took",
-                "How it helps users",
-                "Future improvements planned"
+                "Coaching chatbot feature that lets runners ask personalized questions and returns answers based on the runner's training history.",
+                "Detailed analytics display powered by a custom ML model allowing runners to get insights on their vdot score and other metrics."
             ],
             github: "https://github.com/benburie/project3",
             demo: null
@@ -146,12 +145,12 @@ const portfolioData = {
             image: "images/mealmentor.svg",
             title: "Meal Mentor",
             shortDescription: "Web applcation that allows users to plan their weekly meals and grocery trips.",
-            fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
+            fullDescription: "The application uses JavaScript, DOM manipulation, local storage, and a 3,000-recipe JSON database to manage the kitchen list, grocery list, recipe planner, and recipe suggestions across multiple pages. It relies on functions, event handlers, and table/element generation in the DOM to add, remove, filter, and update data.",
             technologies: ["JavaScript", "HTML/CSS"],
             features: [
-                "Innovative approach you took",
-                "How it helps users",
-                "Future improvements planned"
+                "Users can add ingredients that they already have in their kitchen, and the app keeps that list saved in local storage for future use.",
+                "Users pick recipes from a dropdown, and the app automatically builds a grocery list by comparing the recipe ingredients with what is already in the user's kitchen.",
+                "Users can also discover recipes they can make right now, as the app only suggests dishes that require ingredients the user already has."
             ],
             github: "https://github.com/ben-burie/MealMentor",
             demo: null
@@ -160,12 +159,12 @@ const portfolioData = {
             image: "images/bankportal.svg",
             title: "Bank Portal Simulation",
             shortDescription: "A simulated version of a banking application allowing users to mimic various baking transactions.",
-            fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
+            fullDescription: "Built with Java using strong object-oriented design principles.",
             technologies: ["Java"],
             features: [
-                "Innovative approach you took",
-                "How it helps users",
-                "Future improvements planned"
+                "Users can create accounts and login to their existing account.",
+                "Users have the ability to simulate opening checking and savings accounts.",
+                "The simulation supports deposits, withdrawls, and transfers between accounts."
             ],
             github: "https://github.com/ben-burie/BankPortalSimulation",
             demo: null
@@ -174,12 +173,11 @@ const portfolioData = {
             image: "images/wordle.png",
             title: "Wordle Clone",
             shortDescription: "Re-creation of the popular game Wordle.",
-            fullDescription: "Tell the story of this project - what inspired it, how you built it, what you learned.",
+            fullDescription: "Command-line interface version of Wordle built with Python.",
             technologies: ["Python"],
             features: [
-                "Innovative approach you took",
-                "How it helps users",
-                "Future improvements planned"
+                "Large 5-letter word bank containing over 2300 words.",
+                "Includes score-tracking and a leaderboard."
             ],
             github: "https://github.com/Bruhmux/Wordle-CLI",
             demo: null
