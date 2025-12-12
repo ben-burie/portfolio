@@ -41,7 +41,7 @@ const portfolioData = {
             location: "Milwaukee, WI",
             summary: "Utilizing the SAP ERP system to develop software solutions that support the needs of the human resources and plant maintenance departments at WEC Energy Group.",
             projectHeader: "",
-            technologies: ["SAP", "SAP BTP", "ABAP", "SQL", "SOAP API", "SFTP", "Cloud Integration", "Groovy", "Unit Testing"]
+            technologies: ["SAP", "SAP BTP", "ABAP", "SQL", "SOAP API", "SFTP", "Cloud Integration", "Groovy", "JavaScript", "Unit Testing"]
         },
         {
             company: "University of Wisconsin-Whitewater",
@@ -56,7 +56,7 @@ const portfolioData = {
                 "Designing Python batch testing scripts to evaluate model accuracy at scale and analyzing performance bottlenecks to improve system runtime efficiency.",
                 "Executing training audio signal generation in Google Colab and analyzing runtime performance.",
                 "Implemented solutions to improve command recognition accuracy by 13% thus far.",
-                "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter"
+                "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter."
             ],
             technologies: ["Artificial Intelligence", "Python", "Conformer", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
         },
@@ -73,38 +73,39 @@ const portfolioData = {
         }
     ],
     skills: [
-        "Problem Solving",
-        "User Communication",
+        "Software Engineering",
+        "Artificial Intelligence",
+        "Cloud Integration",
+        "Agile Development",
         "Machine Learning",
         "Database Design",
         "API Development",
-        "Cloud Integration",
-        "Agile Development",
-        "Artificial Intelligence",
-        "Software Testing"
+        "Software Testing",
+        "Web Development",
+        "Data Analysis",
+        "Problem Solving",
+        "User Communication",
     ],
     technologies: [
         "JavaScript",
         "Python",
         "Java",
         "SQL",
-        "React",
+        "C++",
         "MySQL",
         "GitHub",
-        "SAP",
-        "SAP BTP",
-        "Google Colab",
-        "ABAP",
         "Groovy",
-        "SOAP API",
-        "SFTP"
+        "Flask",
+        "PyTorch",
+        "SAP",
+        "ABAP",
     ],
     projects: [
         {
             image: "images/evchargemap.png",
             title: "EV ChargeMap",
             shortDescription: "Full-stack web application that assists electric vehicle drivers planning long road trips.",
-            fullDescription: "Developed a full-stack system using Flask, MySQL, and modular Python APIs, with clean routing and frontend integration through JavaScript. Designed a normalized relational database and optimized queries (including geospatial lookups and indexing) to handle large EV and station datasets efficiently.",
+            fullDescription: "Developed a full-stack system using Flask, MySQL, Python, with clean routing and frontend integration through JavaScript. Designed a normalized relational database and optimized queries (including geospatial lookups and indexing) to handle large EV and station datasets efficiently.",
             technologies: ["Python", "Flask", "MySQL"],
             features: [
                 "Plan EV road trips effortlessly by entering a start and end location and instantly seeing charging stations along your route, complete with suggested stops based on your vehicle’s range.",
@@ -132,11 +133,11 @@ const portfolioData = {
             image: "images/stryde.svg",
             title: "Stryde - <i>In Progress</i>",
             shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
-            fullDescription: "Runners can communicate with an AI-powered coach that uses the OpenAI API. Additionally, users can view their vdot score as its predicted by a custom-developed machine learning model.",
+            fullDescription: "Runners can communicate with an AI-powered coach that uses the OpenAI API.",
             technologies: ["Python", "ML", "OpenAI"],
             features: [
                 "Coaching chatbot feature that lets runners ask personalized questions and returns answers based on the runner's training history.",
-                "Detailed analytics display powered by a custom ML model allowing runners to get insights on their vdot score and other metrics."
+                "Detailed analytics display that allows runners to get insights on their vdot score and other metrics."
             ],
             github: "https://github.com/benburie/project3",
             demo: null
