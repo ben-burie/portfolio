@@ -113,7 +113,7 @@ const portfolioData = {
                 "Includes a smooth, map-based interface powered by real EV + charging-station data, delivering fast route calculations and clear visual station displays."
             ],
             github: "https://github.com/ben-burie/EVChargeMap",
-            demo: "https://project1-demo.com"
+            demo: ""
         },
         {
             image: "images/trackrabbit.png",
@@ -127,7 +127,7 @@ const portfolioData = {
                 "A live timer and lap counter appears on the LCD screen, with the internal electronics handling the timing logic, sensor input, audio output, and display."
             ],
             github: "https://github.com/ben-burie/TrackRabbit",
-            demo: "https://project2-demo.com"
+            demo: ""
         },
         {
             image: "images/stryde.svg",
