@@ -139,7 +139,7 @@ const portfolioData = {
                 "Coaching chatbot feature that lets runners ask personalized questions and returns answers based on the runner's training history.",
                 "Detailed analytics display that allows runners to get insights on their vdot score and other metrics."
             ],
-            github: "https://github.com/benburie/project3",
+            github: "https://github.com/ben-burie/stryde",
             demo: null
         },
         {
