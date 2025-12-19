@@ -196,8 +196,8 @@ const portfolioData = {
             issuedBy: "UW-Whitewater Computer Science Department"
         },
         {
-            title: "UW-Whitewater Deans List (4x)",
-            date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025",
+            title: "UW-Whitewater Deans List (5x)",
+            date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025, Fall 2025",
             issuedBy: "UW-Whitewater"
         },
         {
