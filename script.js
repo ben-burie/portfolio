@@ -133,7 +133,7 @@ const portfolioData = {
             image: "images/stryde.svg",
             title: "Stryde - <i>In Progress</i>",
             shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
-            fullDescription: "Runners can communicate with an AI-powered coach that uses the OpenAI API.",
+            fullDescription: "Runners can communicate with an AI-powered coach, as well as receive AI-generated training plan & insights.",
             technologies: ["Python", "ML", "AI Concepts"],
             features: [
                 "Coaching chatbot feature that lets runners ask personalized questions and returns answers based on the runner's training history.",
