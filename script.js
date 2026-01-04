@@ -102,6 +102,20 @@ const portfolioData = {
     ],
     projects: [
         {
+            image: "images/stryde.svg",
+            title: "Stryde",
+            shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
+            fullDescription: "Web application that allows runners to communicate with an AI-powered coach, as well as receive an AI-generated training plan & insights.",
+            technologies: ["Python", "Flask", "AI Integration"],
+            features: [
+                "Coaching chatbot feature using the Google Gemini API that lets runners ask personalized questions and returns answers based on the runner's training history.",
+                "AI-generated training plan based on runner's past training. Includes predicted fitness improvements resulting from following the plan.",
+                "Detailed analytics display that runners to get insights on their vdot score and other metrics."
+            ],
+            github: "https://github.com/ben-burie/stryde",
+            demo: "https://www.youtube.com/watch?v=2jHlQ-ps44Q"
+        },
+        {
             image: "images/evchargemap.png",
             title: "EV ChargeMap",
             shortDescription: "Full-stack web application that assists electric vehicle drivers planning long road trips.",
@@ -128,19 +142,6 @@ const portfolioData = {
             ],
             github: "https://github.com/ben-burie/TrackRabbit",
             demo: ""
-        },
-        {
-            image: "images/stryde.svg",
-            title: "Stryde - <i>In Progress</i>",
-            shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
-            fullDescription: "Runners can communicate with an AI-powered coach, as well as receive AI-generated training plan & insights.",
-            technologies: ["Python", "ML", "AI Concepts"],
-            features: [
-                "Coaching chatbot feature that lets runners ask personalized questions and returns answers based on the runner's training history.",
-                "Detailed analytics display that allows runners to get insights on their vdot score and other metrics."
-            ],
-            github: "https://github.com/ben-burie/stryde",
-            demo: null
         },
         {
             image: "images/mealmentor.svg",
