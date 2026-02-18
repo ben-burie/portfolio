@@ -1,6 +1,6 @@
 const portfolioData = {
     name: "Ben Burie",
-    tagline: "Computer Science Student | Aspring Software Engineer | Milwaukee, WI",
+    tagline: "Computer Science Student | Software Engineer | Milwaukee, WI",
     contact: {
         email: "benburie22@gmail.com",
         linkedin: "https://www.linkedin.com/in/ben-burie-2a33a6292/",
@@ -53,12 +53,12 @@ const portfolioData = {
             projectHeader: "<a href='https://github.com/ben-burie/voice-command-system-optimization' target='_blank'>Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System</a>",
             details: [
                 "Investigating and learning Conformer deep-learning architecture and its implementation for voice command recognition.",
-                "Designing Python batch testing scripts to evaluate model accuracy at scale and analyzing performance bottlenecks to improve system runtime efficiency.",
-                "Executing training audio signal generation in Google Colab and analyzing runtime performance.",
-                "Implemented solutions to improve command recognition accuracy by 13% thus far.",
+                "Accelerated large-scale model evaluation by developing Python batch testing scripts to benchmark performance across datasets, allowing for rapid experimentation and iteration.",
+                "Increased accuracy of a voice command recognition system by 20\% through engineering a scalable training pipeline that generated diverse augmented audio samples, tuning neural network hyperparameters, and redesigning input processing.",
+                "Optimized training runtime performance in Google Colab by automating synthetic audio generation workflows and analyzing compute bottlenecks.",
                 "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter."
             ],
-            technologies: ["Artificial Intelligence", "Python", "Conformer", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
+            technologies: ["Artificial Intelligence", "Python", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
         },
         {
             company: "University of Wisconsin-Whitewater",
@@ -69,7 +69,18 @@ const portfolioData = {
             summary: "Employed by UW-Whitewater's computer science department as a teaching assistant and tutor for intro-level programming courses.",
             projectHeader: "",
             details: [],
-            technologies: ["Teaching", "Code Review", "Python", "Java"]
+            technologies: ["Code Review", "Python", "Java"]
+        },
+        {
+            company: "University of Wisconsin-Whitewater",
+            role: "IT Help Desk Technician",
+            start: "April 2024",
+            end: "May 2025",
+            location: "Whitewater, WI",
+            summary: "Supplied students and faculty in the College of Business and Economics with hardware and software technical support.",
+            projectHeader: "",
+            details: [],
+            technologies: ["Technical Support", "Operating Systems", "Active Directory"]
         }
     ],
     skills: [
@@ -102,7 +113,7 @@ const portfolioData = {
     ],
     projects: [
         {
-            image: "images/stryde.svg",
+            image: "images/stryde_blue.png",
             title: "Stryde",
             shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
             fullDescription: "Web application that allows runners to communicate with an AI-powered coach, as well as receive an AI-generated training plan & insights.",
@@ -114,6 +125,20 @@ const portfolioData = {
             ],
             github: "https://github.com/ben-burie/stryde",
             demo: "https://www.youtube.com/watch?v=2jHlQ-ps44Q"
+        },
+        {
+            image: "images/TriageAI.png",
+            title: "TriageAI",
+            shortDescription: "AI-powered knowledge assistant for IT support teams that enables access to quick troubleshooting advice.",
+            fullDescription: "Web application that allows IT support teams to get troubleshooting tips to help desk tickets based on historical ticket resolution data.",
+            technologies: ["Python", "Flask", "AI Integration"],
+            features: [
+                "Utilizes a Retrieval-Augmented Generation (RAG) system that retrieves relevant historical ticket resolutions to guide real-time troubleshooting.",
+                "Includes scalable semantic search pipeline using document chunking, vector embeddings, and FAISS similarity indexing to supply high-relevance contextual inputs to an LLM to reduce hallucinations.",
+                "Cites and displays relevant historical tickets with their corresponding resolution to boost response credibility."
+            ],
+            github: "https://github.com/ben-burie/Triage-AI",
+            demo: ""
         },
         {
             image: "images/evchargemap.png",
