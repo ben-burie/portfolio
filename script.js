@@ -7,9 +7,9 @@ const portfolioData = {
         github: "https://github.com/ben-burie"
     },
     about: `I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a B.S. in Computer Science with a minor in Data Science. 
-            Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. I also participate in undergraduate research, 
-            working on a project to optimize the accuracy of a deep-learning voice command recognition software system.
-            I have experience in back-end software development, cloud platform integrations, artificial intelligence, machine learning, and data analysis.`,
+    Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. 
+    I also participate in undergraduate research, working on a project to optimize the accuracy of a voice command recognition software system that utilizes deep-learning technology. 
+    I have experience in back-end software development, cloud platform integrations, artificial intelligence, machine learning, and data analysis.`,
     education: [
         {
             school: "University of Wisconsin-Whitewater",
@@ -50,12 +50,12 @@ const portfolioData = {
             end: "Present",
             location: "Whitewater, WI",
             summary: "Working under the guidance of Dr. Hairi, Assiatant Professor of Computer Science, to optimize a voice command system using a deep learning neural network.",
-            projectHeader: "<a href='https://github.com/ben-burie/voice-command-system-optimization' target='_blank'>Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System</a>",
+            projectHeader: "<a href='https://github.com/ben-burie/voice-command-system-v4' target='_blank'>Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System</a>",
             details: [
-                "Investigating and learning Conformer deep-learning architecture and its implementation for voice command recognition.",
-                "Accelerated large-scale model evaluation by developing Python batch testing scripts to benchmark performance across datasets, allowing for rapid experimentation and iteration.",
-                "Increased accuracy of a voice command recognition system by 20\% through engineering a scalable training pipeline that generated diverse augmented audio samples, tuning neural network hyperparameters, and redesigning input processing.",
-                "Optimized training runtime performance in Google Colab by automating synthetic audio generation workflows and analyzing compute bottlenecks.",
+                "Designed and developed a voice command recognition system in Python supporting user-defined custom commands via continual learning.",
+                "Implemented and compared several continual learning strategies, including selective weight unfreezing, rehearsal-based replay, and Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting.",
+                "Developed automated batch testing pipelines to benchmark model configurations on accuracy and latency.",
+                "Led the project independently under faculty advisement, owning the full ML lifecycle from data generation and training to evaluation and analysis.",
                 "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter."
             ],
             technologies: ["Artificial Intelligence", "Python", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
@@ -109,7 +109,7 @@ const portfolioData = {
         "Flask",
         "PyTorch",
         "SAP",
-        "ABAP",
+        "ABAP"
     ],
     projects: [
         {
@@ -121,7 +121,8 @@ const portfolioData = {
             features: [
                 "Coaching chatbot feature using the Google Gemini API that lets runners ask personalized questions and returns answers based on the runner's training history.",
                 "AI-generated training plan based on runner's past training. Includes predicted fitness improvements resulting from following the plan.",
-                "Detailed analytics display that runners to get insights on their vdot score and other metrics."
+                "Detailed analytics display that runners to get insights on their vdot score and other metrics.",
+                "Handshake AI Showcase Featured Project (April 2024)"
             ],
             github: "https://github.com/ben-burie/stryde",
             demo: "https://www.youtube.com/watch?v=2jHlQ-ps44Q"
