@@ -113,6 +113,20 @@ const portfolioData = {
     ],
     projects: [
         {
+            image: "images/DVEL_Logo.png",
+            title: "DVEL",
+            shortDescription: "Declarative Video Editing Language, a programming language used for video editing, built from scratch.",
+            fullDescription: "Built for COMPSCI 476 (Software Engineering Capstone). This project involved the creation of a programming language used for video editing. This language is not intended for use by artists but rather for fields where videos are edited to meet a repeatable, objective design standard. As a team, we developed a formal syntax for our language, an IDE, and a compiler.",
+            technologies: ["Python"],
+            features: [
+                "Supports source control for their video editing.",
+                "Allows the user to design modular components.",
+                "Users can easily repeat tasks consistently across multiple files.",
+                "Ability to edit large amounts of videos in a single batch."
+            ],
+            github: "https://github.com/Declarative-Video-Editing-Language/DVEL"
+        },
+        {
             image: "images/stryde_blue.png",
             title: "Stryde",
             shortDescription: "AI-powered running coach that gives insights, answers questions, and provides tracking capabilities.",
