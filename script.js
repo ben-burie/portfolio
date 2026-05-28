@@ -9,7 +9,7 @@ const portfolioData = {
     about: `I am an undergraduate student at the University of Wisconsin-Whitewater pursuing a B.S. in Computer Science with a minor in Data Science. 
     Additionally, I work as an IT Application Development Intern at WEC Energy Group in Milwaukee, WI on the ERP Applications team. 
     I also participate in undergraduate research, working on a project to optimize the accuracy of a voice command recognition software system that utilizes deep-learning technology. 
-    I have experience in back-end software development, cloud platform integrations, artificial intelligence, machine learning, and data analysis.`,
+    I have experience in full-stack software development, cloud platform integrations, artificial intelligence, machine learning, and data analysis.`,
     education: [
         {
             school: "University of Wisconsin-Whitewater",
@@ -56,7 +56,7 @@ const portfolioData = {
                 "Implemented and compared several continual learning strategies, including selective weight unfreezing, rehearsal-based replay, and Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting.",
                 "Developed automated batch testing pipelines to benchmark model configurations on accuracy and latency.",
                 "Led the project independently under faculty advisement, owning the full ML lifecycle from data generation and training to evaluation and analysis.",
-                "2025-26 UW-W URP Seed Grant Winner, Fall 2025 Undergraduate Research Fair Presenter."
+                "2025-26 UW-W URP Seed Grant Winner, Fall 2025 & Spring 2026 Undergraduate Research Fair Presenter."
             ],
             technologies: ["Artificial Intelligence", "Python", "Google Colab", "Deep Learning", "BarkAI", "Software Testing"]
         },
@@ -98,18 +98,24 @@ const portfolioData = {
         "User Communication",
     ],
     technologies: [
-        "JavaScript",
         "Python",
         "Java",
+        "JavaScript",
         "SQL",
-        "C++",
-        "MySQL",
-        "GitHub",
-        "Groovy",
-        "Flask",
+        "ABAP",
+        "HTML/CSS",
+        "R",
         "PyTorch",
+        "React",
+        "Flask",
+        "Fiori/UI5",
+        "Pandas",
+        "Scikit-learn",
+        "Docker",
+        "Git",
         "SAP",
-        "ABAP"
+        "MySQL",
+        "REST APIs"
     ],
     projects: [
         {
@@ -237,8 +243,8 @@ const portfolioData = {
             issuedBy: "UW-Whitewater Computer Science Department"
         },
         {
-            title: "UW-Whitewater Deans List (5x)",
-            date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025, Fall 2025",
+            title: "UW-Whitewater Deans List (6x)",
+            date: "Fall 2023, Spring 2024, Fall 2025, Spring 2025, Fall 2025, Spring 2026",
             issuedBy: "UW-Whitewater"
         },
         {
