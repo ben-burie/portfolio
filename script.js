@@ -50,7 +50,7 @@ const portfolioData = {
             end: "Present",
             location: "Whitewater, WI",
             summary: "Working under the guidance of Dr. Hairi, Assiatant Professor of Computer Science, to optimize a voice command system using a deep learning neural network.",
-            projectHeader: "<a href='https://github.com/ben-burie/continual-learning-research' target='_blank'>Title: Optimizing the Efficiency and Accuracy of a Voice Command Recognition System</a>",
+            projectHeader: "<a href='https://github.com/ben-burie/continual-learning-research' target='_blank'>Title: Continual Learning For Personalized Voice Command Recognition</a>",
             details: [
                 "Designed and developed a voice command recognition system in Python supporting user-defined custom commands via continual learning.",
                 "Implemented and compared several continual learning strategies, including selective weight unfreezing, rehearsal-based replay, and Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting.",
